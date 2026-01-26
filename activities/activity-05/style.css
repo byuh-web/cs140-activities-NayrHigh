@@ -5,8 +5,26 @@ h1 {
     font-size: 50px
 }
 
+h2 {
+    font-size: 35px;
+}
+
 h3 {
+    font-size: 20px;
     color: rgb(44, 44, 201);
 }
 
-/*PARAGRAPHS*/
+/*PARAGRAPHS & LISTS*/
+p {
+    font-size: 15px;
+    color: blueviolet;
+}
+ul {
+    font-size: 15px;
+    color: blueviolet;
+}
+
+ol {
+    font-size: 15px;
+    color: blueviolet;
+}
