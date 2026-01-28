@@ -1,0 +1,42 @@
+/*HEADERS*/
+
+h1 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 20px;
+    color: lightskyblue;
+}
+
+/*PARAGRAPHS AND LISTS*/
+
+p, ul, ol {
+    font-size: 15px;
+    color: #000;
+}
+
+/*IMAGES AND VIDEOS*/
+
+img {
+    width: 300px;
+    height: 400px;
+}
+
+/*ID SELECTOR*/
+
+#head-foot {
+    background-color:rgb(135, 135, 211);
+}
+
+/*CLASS SELECTOR*/
+
+.highlight {
+    color: #cf8600;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.question {
+    color: #bb2f56 ;
+}
