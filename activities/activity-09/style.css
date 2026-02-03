@@ -159,13 +159,6 @@ footer {
     background-repeat: repeat;
 }
 
-.index-body main {
-    background-image: url('images/teahupoo_small.jpg');
-    background-repeat: no-repeat;
-    background-position: right bottom;
-    background-size: 200px;
-}
-
 /* Custom Bullet List for Index */
 .tour-list {
     list-style: none;
@@ -173,11 +166,7 @@ footer {
 }
 
 .tour-list li {
-    background-image: url('images/teahupoo_small.jpg');
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: 25px 25px;
-    padding-left: 40px;
+    padding-left: 60px;
     margin-bottom: 15px;
     line-height: 30px;
 }
