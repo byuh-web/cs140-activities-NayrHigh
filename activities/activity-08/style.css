@@ -60,6 +60,11 @@ p {
     color: #374151;
 }
 
+.highlight {
+    background-color: #efd8b7d3;
+    
+}
+
 /* FOOTER */
 footer {
     background-color: #E5E7EB;
