@@ -62,7 +62,19 @@ p {
 
 .highlight {
     background-color: #efd8b7d3;
-    
+}
+
+/*Other way to style a list*/
+.li1 {
+    list-style-image: url(favicon.svg);
+}
+
+.li2 {
+    list-style-type: square;
+}
+
+.li3 {
+    list-style-type: upper-roman;
 }
 
 /* FOOTER */
