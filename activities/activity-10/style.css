@@ -1,17 +1,60 @@
 
 
+
+/*BODY*/
+body {
+    background-color: #EFECE3;
+    margin: 0;
+    padding: 0;
+    color: #2C3E50;
+}
+
 /*HEADER*/
 header {
     background-color: #EFECE3;
+    margin: 0;
+    padding: 1.5rem 2rem 0;
+    text-align: center;
+}
+
+/*NAV*/
+nav {
+    background-color: #8FABD4;
+    margin: 0;
+    text-align: center;
+    padding: 15px 10px;
+}
+
+nav a {
+    background-color: #4A70A9;
+    border-radius: 5px;
+    color: #EFECE3;
+    text-decoration: none;
+    padding: 8px 24px;
+    margin: 0 2em;
 }
 
 
-/*NAV*/
-
-
-
 /*MAIN*/
+div {
+    background-color: #8FABD4;
+    border-radius: 8px;
+    margin: 2rem;
+    padding: 1.5rem 2.5rem 2rem;
+    color: #1A2A3A;
+    
+}
 
 
 
 /*FOOTER*/
+
+footer {
+    background-color: #4A70A9;
+    color: #EFECE3;
+    text-align: center;
+    padding: 1.2rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
