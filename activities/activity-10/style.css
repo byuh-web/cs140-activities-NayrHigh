@@ -1,6 +1,5 @@
 
 
-
 /*BODY*/
 body {
     background-color: #EFECE3;
@@ -12,8 +11,9 @@ body {
 /*HEADER*/
 header {
     background-color: #EFECE3;
+    width: 500px;
     margin: 0;
-    padding: 1.5rem 2rem 0;
+    padding: 1rem 2rem 0;
     text-align: center;
 }
 
@@ -32,6 +32,7 @@ nav a {
     text-decoration: none;
     padding: 8px 24px;
     margin: 0 2em;
+    box-shadow:#1A2A3A; 
 }
 
 
@@ -45,7 +46,28 @@ div {
     
 }
 
+/* IMAGES*/
+img {
+    width:200px;
+    height: 200px;
+    border-radius: 20px;
+}
 
+figure{
+    width: 200px;
+}
+
+figcaption {
+    font-size: 15px;
+    text-align: center;
+    padding: 2px 6px;
+}
+
+#pic {
+    border: 2px solid #2C3E50;
+    box-shadow:0 5px 10px #4A70A9;
+    border-radius: 22px ;
+}
 
 /*FOOTER*/
 
