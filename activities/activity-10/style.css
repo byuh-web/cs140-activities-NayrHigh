@@ -43,8 +43,18 @@ div {
     margin: 2rem;
     padding: 1.5rem 2.5rem 2rem;
     color: #1A2A3A;
-    
+    clear: both;
 }
+
+h2 {
+    margin-left: 2rem;
+}
+
+div h2 {
+    margin-left: 0;
+}
+
+
 
 /* IMAGES*/
 img {
@@ -67,6 +77,11 @@ figcaption {
     border: 2px solid #2C3E50;
     box-shadow:0 5px 10px #4A70A9;
     border-radius: 22px ;
+}
+
+.float_img {
+    float:left;
+    margin: 0 20px 20px 2rem;
 }
 
 /*FOOTER*/
