@@ -1,27 +1,41 @@
 
-
 /*BODY*/
 body {
     background-color: #EFECE3;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
     margin: 0;
     padding: 0;
-    color: #2C3E50;
+    line-height: 1.6;
+}
+
+/* WRAPPER */
+.wrapper {
+    width: 850px;
+    margin: 0 auto;
+}
+
+div {
+    clear:both;
 }
 
 /*HEADER*/
 header {
-    background-color: #EFECE3;
-    margin: 0;
-    padding: 1rem 1rem 0;
-    text-align: center;
+    background-image: url('images/minecraft.jpg');
+    background-size: cover;
+    background-origin: border-box;
+    background-clip: border-box;
+    height: 300px;
+    width: 100%;
 }
 
 /*NAV*/
 nav {
     background-color: #8FABD4;
+    display: flex;
+    flex-wrap: wrap;
     margin: 0;
     text-align: center;
-    padding: 15px 10px;
+    padding: auto 15px;
 }
 
 nav a {
@@ -29,34 +43,38 @@ nav a {
     border-radius: 5px;
     color: #EFECE3;
     text-decoration: none;
-    padding: 8px 24px;
-    margin: 0 2em;
-    box-shadow:#1A2A3A; 
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 8px 12px;
+    margin: 8px auto;
+    box-shadow: 0 3px 6px #1A2A3A;
 }
 
+nav a:hover {
+    background-color: #2C3E50;
+    color: #FFD700;
+}
 
 /*MAIN*/
-div {
-    background-color: #8FABD4;
-    border-radius: 8px;
-    margin: 2rem;
-    padding: 1.5rem 2.5rem 2rem;
-    color: #1A2A3A;
+main div {
+    margin: 1rem;
+    padding: 0;
     clear: both;
-}
-
-h2 {
-    margin-left: 2rem;
 }
 
 div h2 {
     margin-left: 0;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px #4A70A9;
 }
 
-
+p {
+    font-style: italic;
+}
 
 /* IMAGES*/
-img {
+main img {
     width:200px;
     height: 200px;
     border-radius: 20px;
@@ -78,9 +96,14 @@ figcaption {
     border-radius: 22px ;
 }
 
-.float_img {
+.float_img_l {
     float:left;
     margin: 0 20px 20px 2rem;
+}
+
+.float_img_r {
+    float:right;
+    margin: 0 2rem 20px 20px;
 }
 
 /*FOOTER*/
@@ -94,3 +117,5 @@ footer {
     font-size: 0.9rem;
     letter-spacing: 0.5px;
 }
+
+

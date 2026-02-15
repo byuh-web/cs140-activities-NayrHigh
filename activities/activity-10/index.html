@@ -8,70 +8,87 @@
 </head>
 <body>
     <header>
-        <h1>Box Model</h1>
-        
     </header>
 
     <nav>
-        <a href="">link</a>
-        <a href="">link</a>
-        <a href="">link</a>
+        <a href="#">Minecraft PE</a>
+        <a href="#">Minecraft Main Goal</a>
+        <a href="#">Creative Builds</a>
+        <a href="#">Hardcore</a>
     </nav>
 
+    <div class="wrapper">
     <main>
-
-        <h2>
-            My MINECRAFT History
-        </h2>
         
-        <figure id="pic" class="float_img">
-            <img src="images/Minecraft PE.jpeg" alt=MinecraftPE >
+        <!--Minecraft PE-->
+        <div>
+            <figure id="pic" class="float_img_l">
+            <img src="images/Minecraft PE.jpeg" alt="MinecraftPE" >
             <figcaption>Minecraft PE logo</figcaption>
         </figure>
 
+        <h2>
+            Pocket Edition
+        </h2>
+
         <p>
-            I started playing Minecraft in 2012. I was playing on a mini iPad and at that time we only had the creative mode.
+            I started playing Minecraft in 2012. I was playing on a mini iPad and at that time we only had the creative mode. This version was always behind from the one on PC.
         </p>
+        </div>
+        
+        
+        <!--Main Goal-->
+        <div>
+            <img src="images/ender_dragon.jpg" alt="Ender Dragon" class="float_img_r">
+
+            <h2>
+                Main Goal
+            </h2>
+
+            <p>
+                You may not know but MINECRAFT has a actual ending. The main goal of the game is to kill the Ender Dragon. After doing so and jumping through the portal you will see the geenric ending.
+            </p>
+        </div>
+        
         
 
+        <!--Creative Builds-->
+
         <div>
-            <h2>QUESTIONS</h2>
-        <h3>What is normal flow in HTML?</h3>
+            <img src="images/fantasy_city.jpg" alt="Facntasy city" class="float_img_l">
+
+        <h2>
+            Creative Mode
+        </h2>
+
         <p>
-            Normal flow is the default way browsers lay out HTML elements on a page.
-        </p>
-
-        <h3>What does float do? Why do you need to clear the float?</h3>
-        <p>
-            Float removes an element from the normal flow and pushes it to the left or right, allowing other content to wrap around it. 
-        </p>
-
-        <h3>What do absolute, fixed, and relative do?</h3>
-      
-
-        <ul>
-            <li>Absolute: move an element according to its past position.</li>
-            <li>Fixed: make an element stay at the same place.</li>
-            <li>Relative: move an element without removing oit from the document flow. </li>
-        </ul>
-
-        <h3>How can you make nice navigation buttons for mobile devices?</h3>
-        <p>
-            By styling anchor tags as block-level elements with padding, using large sizes, make sure  the layout adapt to smaller screens, and using a hamburger menu icon to toggle the navigation on and off.
-        </p>
-
-        <h3>Where can you find videos to review what we talked about in class?</h3>
-        <p>
-            In the reading assignments.
+            Maybe one of my favorite mode because your can create so many cool stuff. This mode and with the add of many new blocks made me rethink about home design and architecture.
         </p>
         </div>
         
 
+        <!--Harcode-->
+        <div>
+            <img src="images/hardcore.jpeg" alt="Hardcore" class="float_img_r">
+        
+
+        <h2>
+            Harcode Mode
+        </h2>
+
+        <p>
+            If you are not a good player do not try this! You will waste a lot of your time building stuff that you won't be able to interact with. This is for those that are looking for excitment and challenge! 
+        </p>
+        </div>
+        
     </main>
-    
-    <footer>
-        &copy; 2026 | Ryan Rupea
-    </footer>
+    </div>
+
+    <div>
+        <footer>
+            &copy; 2026 | Ryan Rupea
+        </footer>
+    </div>
 
 </body>
 </html>
