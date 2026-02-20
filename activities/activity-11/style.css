@@ -1,0 +1,28 @@
+.box {
+
+    background-color: rgb(129, 186, 183);
+
+    border: 2px solid black;
+
+}
+
+.container1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 5px;
+}
+
+.container4{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+}
