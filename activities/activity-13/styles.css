@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background: #f5f5f5;
+  color: #111;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Top bar */
+.top-bar {
+  background: #000;
+  color: white;
+  font-size: 14px;
+  padding: 8px 0;
+  text-align: center;
+}
+
+.top-bar .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.shop-link {
+  color: white;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+/* Header */
+.main-header {
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 12px 0;
+}
+
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: 700;
+  color: black;
+  text-decoration: none;
+  letter-spacing: -1px;
+}
+
+.main-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 36px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #111;
+  font-size: 15px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.main-nav a:hover {
+  color: #757575;
+}
+
+.header-icons {
+  display: flex;
+  gap: 28px;
+}
+
+.header-icons a {
+  color: #111;
+  font-size: 15px;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+/* Hero */
+.hero {
+  height: 86vh;
+  min-height: 720px;
+  background: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.4)),
+              url('https://images.unsplash.com/photo-1606890658317-7d14490dcd4d?w=1600&auto=format&fit=crop&q=80') center/cover no-repeat;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  max-width: 620px;
+  padding-left: 80px;
+}
+
+.hero h1 {
+  font-size: 92px;
+  font-weight: 700;
+  line-height: 0.92;
+  margin-bottom: 8px;
+  letter-spacing: -3px;
+}
+
+.subtitle {
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 32px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 32px;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 30px;
+  margin-right: 16px;
+  transition: all 0.2s;
+}
+
+.primary {
+  background: white;
+  color: black;
+}
+
+.primary:hover {
+  background: #f0f0f0;
+  transform: translateY(-2px);
+}
+
+.secondary {
+  background: rgba(255,255,255,0.15);
+  color: white;
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255,255,255,0.4);
+}
+
+.secondary:hover {
+  background: rgba(255,255,255,0.25);
+}
+
+/* Cards */
+.featured-categories {
+  padding: 80px 0;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.category-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.category-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.card-image {
+  height: 420px;
+  background-size: cover;
+  background-position: center;
+}
+
+.category-card h3 {
+  padding: 24px 28px 8px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.card-link {
+  display: block;
+  padding: 0 28px 28px;
+  color: #0061ff;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Footer */
+.site-footer {
+  background: #111;
+  color: #aaa;
+  padding: 80px 0 40px;
+}
+
+.footer-top {
+  display: flex;
+  gap: 80px;
+  margin-bottom: 60px;
+}
+
+.footer-col h4 {
+  color: white;
+  font-size: 16px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col a {
+  color: #aaa;
+  text-decoration: none;
+  line-height: 2.1;
+  font-size: 15px;
+}
+
+.footer-col a:hover {
+  color: white;
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  padding-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+.footer-links-small a {
+  color: #777;
+  margin-left: 24px;
+  text-decoration: none;
+}
+
+.footer-links-small a:hover {
+  color: #ccc;
+}
