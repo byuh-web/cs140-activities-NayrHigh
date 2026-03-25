@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TravelEase — Create Your Account</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="header">
+      <h1>TravelEase</h1>
+      <p>Your adventure starts here</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="form-card">
+      <h2>Create Your Account</h2>
+      <p class="subtitle">Join thousands of travelers planning their next trip.</p>
+
+      <form>
+
+        <!-- Personal Information -->
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <div class="form-row">
+            <label for="full-name">Full Name</label>
+            <input type="text" id="full-name" name="full-name" placeholder="Ryan Rupea" required>
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="ryan@gmail.com" required>
+          </div>
+
+          <div class="form-row">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="+1 (808) 123-4567">
+          </div>
+
+          <div class="form-row">
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob">
+          </div>
+        </fieldset>
+
+        <!-- Account Security -->
+        <fieldset>
+          <legend>Account Security</legend>
+
+          <div class="form-row">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="ryantravel" required>
+          </div>
+
+          <div class="form-row">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="At least 8 characters" required>
+          </div>
+
+          <div class="form-row">
+            <label for="website">Personal Travel Blog (optional)</label>
+            <input type="url" id="website" name="website" placeholder="https://myblog.com">
+          </div>
+        </fieldset>
+
+        <!-- Travel Preferences -->
+        <fieldset>
+          <legend>Travel Preferences</legend>
+
+          <div class="form-row">
+            <label for="travel-style">Preferred Travel Style</label>
+            <select id="travel-style" name="travel-style">
+              <option value="">-- Select one --</option>
+              <option value="adventure">Adventure &amp; Outdoors</option>
+              <option value="cultural">Cultural &amp; Historic</option>
+              <option value="relaxation">Beach &amp; Relaxation</option>
+              <option value="foodie">Food &amp; Culinary</option>
+              <option value="budget">Budget Backpacking</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="trips-per-year">Trips Per Year</label>
+            <input type="number" id="trips-per-year" name="trips-per-year" min="0" max="52" placeholder="e.g. 3">
+          </div>
+
+          <div class="form-row">
+            <span class="group-label">Preferred Trip Length</span>
+            <div>
+              <label>
+                <input type="radio" name="trip-length" value="weekend"> Weekend (1–3 days)
+              </label>
+              <label>
+                <input type="radio" name="trip-length" value="week"> One Week
+              </label>
+              <label>
+                <input type="radio" name="trip-length" value="extended"> Extended (2+ weeks)
+              </label>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <span class="group-label">Interests (check all that apply)</span>
+            <div class="check-options">
+              <label>
+                <input type="checkbox" name="interests" value="hiking"> Hiking
+              </label>
+              <label>
+                <input type="checkbox" name="interests" value="photography"> Photography
+              </label>
+              <label>
+                <input type="checkbox" name="interests" value="cuisine"> Local Cuisine
+              </label>
+              <label>
+                <input type="checkbox" name="interests" value="museums"> Museums
+              </label>
+              <label>
+                <input type="checkbox" name="interests" value="nightlife"> Nightlife
+              </label>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label for="bio">Tell Us About Yourself</label>
+            <textarea id="bio" name="bio" rows="4" placeholder="Share your travel story..."></textarea>
+          </div>
+        </fieldset>
+
+        <!-- Terms -->
+        <div class="terms-row">
+          <label>
+            <input type="checkbox" name="terms" required>
+            I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+          </label>
+        </div>
+
+        <div class="form-submit">
+          <button type="submit">Create My Account</button>
+        </div>
+
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <p>&copy; 2026 Ryan.</p>
+      <nav>
+        <a href="#">About</a>
+        <a href="#">Help</a>
+        <a href="#">Privacy</a>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>
