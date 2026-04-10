@@ -4,15 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-
-    <title>Destriva</title>
+    <title>Destriva - Calendar</title>
 </head>
-
 <body>
-    <!--HEADER-->
-    <!--NAV-->
-    <!--HOMEPAGE-->
-    <!--FOOTER-->
-    
+
+    <!-- NAV -->
+    <nav>
+        <div class="nav-left">
+            <img src="images/DESTRIVA.jpg" alt="Destriva logo">
+            <a href="homepage.html">Destriva</a>
+        </div>
+        <div class="nav-links">
+            <a href="calendar.html">Calendar</a>
+            <a href="guests.html">Guests</a>
+            <a href="vendors.html">Vendors</a>
+        </div>
+        <div class="nav-right"></div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <div class="page-header">
+        <div class="page-header-left">
+            <h1>Wedding Timeline</h1>
+            <p>Track every important date leading up to your big day.</p>
+        </div>
+        <button class="btn-primary" id="add-event-btn">+ Add Event</button>
+    </div>
+
+    <!-- CALENDAR CONTAINER -->
+    <div class="calendar-container" id="calendar-container">
+        <div class="timeline-header">
+            <button class="timeline-nav-btn" id="prev-month">&#8592;</button>
+            <span class="timeline-month" id="current-month">April 2026</span>
+            <button class="timeline-nav-btn" id="next-month">&#8594;</button>
+        </div>
+
+        <div class="timeline">
+            <div class="timeline-line"></div>
+            <div id="timeline">
+                <!-- Events rendered by JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- ADD EVENT MODAL -->
+    <div class="modal-overlay" id="event-modal">
+        <div class="modal">
+            <h2>Add Event</h2>
+            <form id="event-form">
+                <div class="form-group">
+                    <label for="event-title">Event Title</label>
+                    <input type="text" id="event-title" placeholder="e.g. Venue Booking Deadline" required>
+                </div>
+                <div class="form-group">
+                    <label for="event-date">Date</label>
+                    <input type="date" id="event-date" required>
+                </div>
+                <div class="form-group">
+                    <label for="event-time">Time</label>
+                    <input type="time" id="event-time">
+                </div>
+                <div class="form-group">
+                    <label for="event-description">Description (optional)</label>
+                    <textarea id="event-description" placeholder="Add some notes..."></textarea>
+                </div>
+                <div class="modal-buttons">
+                    <button type="button" class="btn-cancel" id="event-cancel">Cancel</button>
+                    <button type="submit" class="btn-primary">Add Event</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <h3>Inspired by</h3>
+        <a href="https://www.zola.com/">Zola</a>
+        <a href="https://www.theknot.com/">The Knot</a>
+    </footer>
+
+    <script src="destriva.js"></script>
 </body>
 </html>

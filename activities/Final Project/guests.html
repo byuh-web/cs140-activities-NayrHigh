@@ -4,15 +4,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-
-    <title>Destriva</title>
+    <title>Destriva - Guest List</title>
 </head>
-
 <body>
-    <!--HEADER-->
-    <!--NAV-->
-    <!--HOMEPAGE-->
-    <!--FOOTER-->
-    
+
+    <!-- NAV -->
+    <nav>
+        <div class="nav-left">
+            <img src="images/DESTRIVA.jpg" alt="Destriva logo">
+            <a href="homepage.html">Destriva</a>
+        </div>
+        <div class="nav-links">
+            <a href="calendar.html">Calendar</a>
+            <a href="guests.html">Guests</a>
+            <a href="vendors.html">Vendors</a>
+        </div>
+        <div class="nav-right"></div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <div class="page-header">
+        <div class="page-header-left">
+            <h1>Guest List</h1>
+            <p id="guest-subtitle">20 guests added · 8 confirmed · 6 favorites</p>
+        </div>
+        <button class="btn-primary" id="add-guest-btn">+ Add Guest</button>
+    </div>
+
+    <!-- KANBAN BOARD -->
+    <div class="kanban-board">
+
+        <!-- GOT INFO -->
+        <div class="kanban-column column-got-info">
+            <div class="column-header">
+                <h3>Got Info</h3>
+                <span class="column-count">4</span>
+            </div>
+            <div class="guest-card"><button class="star-btn">☆</button><span class="guest-name">Sophie Marurai</span><button class="arrow-btn">›</button></div>
+            <div class="guest-card"><button class="star-btn">☆</button><span class="guest-name">Jean-Pierre Teihotaata</span><button class="arrow-btn">›</button></div>
+            <div class="guest-card"><button class="star-btn">☆</button><span class="guest-name">Teura Narii</span><button class="arrow-btn">›</button></div>
+            <div class="guest-card"><button class="star-btn">☆</button><span class="guest-name">Mireille Faaroa</span><button class="arrow-btn">›</button></div>
+        </div>
+
+        <!-- INVITED -->
+        <div class="kanban-column column-invited">
+            <div class="column-header">
+                <h3>Invited</h3>
+                <span class="column-count">2</span>
+            </div>
+            <div class="guest-card"><button class="star-btn">☆</button><span class="guest-name">Vaihere Tutapu</span><button class="arrow-btn">›</button></div>
+            <div class="guest-card"><button class="star-btn">☆</button><span class="guest-name">Thomas Paofai</span><button class="arrow-btn">›</button></div>
+        </div>
+
+        <!-- CONFIRMED -->
+        <div class="kanban-column column-confirmed">
+            <div class="column-header">
+                <h3>Confirmed</h3>
+                <span class="column-count">8</span>
+            </div>
+            <div class="guest-card"><button class="star-btn">☆</button><span class="guest-name">Clarisse Tetuanui</span><button class="arrow-btn">›</button></div>
+            <div class="guest-card"><button class="star-btn filled">★</button><span class="guest-name">Henri Manutahi</span><button class="arrow-btn">›</button></div>
+            <div class="guest-card"><button class="star-btn">☆</button><span class="guest-name">Aimee Taravana</span><button class="arrow-btn">›</button></div>
+            <div class="guest-card"><button class="star-btn">☆</button><span class="guest-name">Paul Raiatea</span><button class="arrow-btn">›</button></div>
+            <div class="guest-card"><button class="star-btn">☆</button><span class="guest-name">Mere Hauata</span><button class="arrow-btn">›</button></div>
+            <div class="guest-card"><button class="star-btn">☆</button><span class="guest-name">Tehani Nainoa</span><button class="arrow-btn">›</button></div>
+            <div class="guest-card"><button class="star-btn">☆</button><span class="guest-name">Reva Tavares</span><button class="arrow-btn">›</button></div>
+            <div class="guest-card"><button class="star-btn">☆</button><span class="guest-name">Hiro Vaivai</span><button class="arrow-btn">›</button></div>
+        </div>
+
+        <!-- FAVORITES -->
+        <div class="kanban-column column-favorites">
+            <div class="column-header">
+                <h3>Favorites</h3>
+                <span class="column-count">6</span>
+            </div>
+            <div class="guest-card"><button class="star-btn filled">★</button><span class="guest-name">Moana Tearii</span><button class="arrow-btn">›</button></div>
+            <div class="guest-card"><button class="star-btn filled">★</button><span class="guest-name">Vahine Patea</span><button class="arrow-btn">›</button></div>
+            <div class="guest-card"><button class="star-btn filled">★</button><span class="guest-name">Tini Manu</span><button class="arrow-btn">›</button></div>
+            <div class="guest-card"><button class="star-btn filled">★</button><span class="guest-name">Luana Florès</span><button class="arrow-btn">›</button></div>
+            <div class="guest-card"><button class="star-btn filled">★</button><span class="guest-name">Christophe Ori</span><button class="arrow-btn">›</button></div>
+            <div class="guest-card"><button class="star-btn">☆</button><span class="guest-name">Patricia Teriitehau</span><button class="arrow-btn">›</button></div>
+        </div>
+
+    </div>
+
+    <!-- ADD GUEST MODAL -->
+    <div class="modal-overlay" id="guest-modal">
+        <div class="modal">
+            <h2>Add Guest</h2>
+            <form id="guest-form">
+                <div class="form-group">
+                    <label for="guest-name">Full Name</label>
+                    <input type="text" id="guest-name" placeholder="e.g. Marie Dupont" required>
+                </div>
+                <div class="form-group">
+                    <label for="guest-column">Status</label>
+                    <select id="guest-column">
+                        <option value="column-got-info">Got Info</option>
+                        <option value="column-invited">Invited</option>
+                        <option value="column-confirmed">Confirmed</option>
+                        <option value="column-favorites">Favorites</option>
+                    </select>
+                </div>
+                <div class="modal-buttons">
+                    <button type="button" class="btn-cancel" id="guest-cancel">Cancel</button>
+                    <button type="submit" class="btn-primary">Add Guest</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <h3>Inspired by</h3>
+        <a href="https://www.zola.com/">Zola</a>
+        <a href="https://www.theknot.com/">The Knot</a>
+    </footer>
+
+    <script src="destriva.js"></script>
 </body>
 </html>
