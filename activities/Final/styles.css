@@ -1,0 +1,815 @@
+
+/* === GOOGLE FONTS === */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap');
+
+/* === CSS VARIABLES === */
+:root {
+  --primary:   #0077b6;
+  --secondary: #00b4d8;
+  --accent:    #f4a261;
+  --dark:      #03045e;
+  --light-bg:  #f0f4f8;
+  --white:     #ffffff;
+  --text:      #2d3436;
+  --text-light:#636e72;
+  --border:    #dfe6e9;
+}
+
+/* === RESET & BASE === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--text);
+  background-color: var(--light-bg);
+  line-height: 1.7;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ============================================
+   HEADER
+   ============================================ */
+header {
+  background: linear-gradient(135deg, var(--dark), var(--primary));
+  color: var(--white);
+  padding: 22px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.header-brand h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.9rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.header-brand p.tagline {
+  font-size: 0.88rem;
+  color: var(--secondary);
+  margin-top: 3px;
+  letter-spacing: 1px;
+}
+
+.header-logo {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.8rem;
+  color: var(--accent);
+}
+
+/* ============================================
+   NAVIGATION
+   ============================================ */
+nav {
+  background-color: var(--dark);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-bottom: 3px solid var(--accent);
+}
+
+nav a {
+  color: #ccd6f6;
+  text-decoration: none;
+  padding: 14px 16px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.92rem;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: background-color 0.25s, color 0.25s;
+}
+
+nav a:hover {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+nav a.active {
+  background-color: var(--accent);
+  color: var(--dark);
+  font-weight: 700;
+}
+
+/* ============================================
+   HERO SECTION
+   ============================================ */
+.hero {
+  background:
+    linear-gradient(rgba(3, 4, 94, 0.72), rgba(0, 119, 182, 0.65)),
+    url('https://images.unsplash.com/photo-1502680390469-be75c86b636f?w=1600&q=80') center / cover no-repeat;
+  color: var(--white);
+  text-align: center;
+  padding: 110px 40px;
+}
+
+.hero h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 18px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+}
+
+.hero p {
+  font-size: 1.1rem;
+  max-width: 680px;
+  margin: 0 auto 25px;
+  color: #d6eeff;
+}
+
+.hero-btn {
+  display: inline-block;
+  background-color: var(--accent);
+  color: var(--dark);
+  padding: 12px 32px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.hero-btn:hover {
+  background-color: #e08c4a;
+  transform: translateY(-2px);
+}
+
+/* ============================================
+   MAIN CONTENT WRAPPER
+   ============================================ */
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px 60px;
+}
+
+/* ============================================
+   SECTION HEADINGS
+   ============================================ */
+h2.section-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2rem;
+  color: var(--dark);
+  border-left: 5px solid var(--accent);
+  padding-left: 15px;
+  margin: 45px 0 20px;
+}
+
+h3.sub-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.3rem;
+  color: var(--primary);
+  margin: 22px 0 10px;
+}
+
+/* ============================================
+   CONTENT SECTION CARDS
+   ============================================ */
+.content-section {
+  background: var(--white);
+  border-radius: 10px;
+  padding: 30px 35px;
+  margin: 25px 0;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+}
+
+.content-section p {
+  margin-bottom: 14px;
+  font-size: 0.97rem;
+}
+
+.content-section ul,
+.content-section ol {
+  margin: 10px 0 15px 28px;
+}
+
+.content-section ul li,
+.content-section ol li {
+  margin-bottom: 8px;
+  font-size: 0.97rem;
+}
+
+/* ============================================
+   SURFER CARDS — HOMEPAGE GRID
+   ============================================ */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 24px;
+  margin: 30px 0;
+}
+
+.card {
+  background: var(--white);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-rank {
+  background: var(--accent);
+  color: var(--dark);
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.85rem;
+  padding: 5px 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.card-body {
+  padding: 16px 14px 20px;
+}
+
+.card-body h3 {
+  font-family: 'Oswald', sans-serif;
+  color: var(--dark);
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.card-body p {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  margin-bottom: 14px;
+}
+
+.card-body a.btn {
+  display: inline-block;
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 8px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  transition: background-color 0.25s;
+}
+
+.card-body a.btn:hover {
+  background-color: var(--dark);
+}
+
+/* ============================================
+   SURFER BIO LAYOUT
+   ============================================ */
+.bio-layout {
+  display: flex;
+  gap: 35px;
+  align-items: flex-start;
+  margin: 20px 0;
+}
+
+.bio-img-wrap {
+  flex-shrink: 0;
+  width: 270px;
+  text-align: center;
+}
+
+.bio-img-wrap img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+  object-fit: cover;
+  height: 340px;
+}
+
+.bio-text {
+  flex: 1;
+}
+
+.attribution {
+  font-size: 0.73rem;
+  color: var(--text-light);
+  font-style: italic;
+  margin-top: 7px;
+  line-height: 1.4;
+}
+
+/* ============================================
+   STAT BADGES
+   ============================================ */
+.stat-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin: 22px 0;
+}
+
+.badge {
+  background: linear-gradient(135deg, var(--primary), var(--dark));
+  color: var(--white);
+  padding: 12px 22px;
+  border-radius: 50px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.9rem;
+  text-align: center;
+  min-width: 110px;
+}
+
+.badge span {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+/* ============================================
+   INLINE REFERENCE LINKS
+   ============================================ */
+.ref-link {
+  color: var(--primary);
+  font-size: 0.83rem;
+  text-decoration: none;
+  border-bottom: 1px dashed var(--primary);
+  margin: 0 2px;
+  white-space: nowrap;
+}
+
+.ref-link:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.ref-note {
+  font-size: 0.8rem;
+  color: var(--text-light);
+  font-style: italic;
+  margin-top: 4px;
+}
+
+/* ============================================
+   VIDEO SECTION
+   ============================================ */
+.video-wrap {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 18px 0 10px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+.video-wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.video-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: var(--primary);
+  font-size: 0.88rem;
+  text-decoration: none;
+  border-bottom: 1px solid var(--primary);
+}
+
+.video-link:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+/* ============================================
+   COMPARISON TABLE
+   ============================================ */
+.table-wrap {
+  overflow-x: auto;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+.stats-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+  min-width: 620px;
+}
+
+.stats-table thead th {
+  background-color: var(--dark);
+  color: var(--white);
+  padding: 15px 18px;
+  text-align: left;
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.95rem;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+.stats-table tbody td {
+  padding: 13px 18px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: middle;
+}
+
+.stats-table tbody tr:nth-child(even) {
+  background-color: #eaf4ff;
+}
+
+.stats-table tbody tr:hover {
+  background-color: #d0eaf9;
+}
+
+.stats-table tbody td:first-child {
+  font-weight: 700;
+  color: var(--dark);
+  font-family: 'Oswald', sans-serif;
+  font-size: 1rem;
+}
+
+.highlight-row {
+  background-color: #fff3e0 !important;
+}
+
+.highlight-row td:first-child {
+  color: var(--accent) !important;
+}
+
+/* ============================================
+   FORM STYLES
+   ============================================ */
+.form-container {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 22px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 7px;
+  color: var(--dark);
+  font-size: 0.95rem;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="number"],
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.95rem;
+  color: var(--text);
+  background-color: var(--white);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(0,119,182,0.12);
+  outline: none;
+}
+
+.form-group textarea {
+  height: 140px;
+  resize: vertical;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.checkbox-group input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--primary);
+  cursor: pointer;
+}
+
+.checkbox-group label {
+  margin: 0;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.error-msg {
+  color: #e74c3c;
+  font-size: 0.82rem;
+  margin-top: 5px;
+  display: none;
+}
+
+.btn-submit {
+  background: linear-gradient(135deg, var(--primary), var(--dark));
+  color: var(--white);
+  border: none;
+  padding: 14px 40px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 1.5px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: opacity 0.3s, transform 0.2s;
+  text-transform: uppercase;
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.btn-submit:hover {
+  opacity: 0.88;
+  transform: translateY(-2px);
+}
+
+/* ============================================
+   CONFIRMATION PAGE
+   ============================================ */
+.confirmation-box {
+  background: var(--white);
+  border-radius: 14px;
+  padding: 50px 40px;
+  max-width: 620px;
+  margin: 50px auto;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.checkmark {
+  font-size: 4.5rem;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.confirmation-box h2 {
+  font-family: 'Oswald', sans-serif;
+  color: var(--dark);
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.confirmation-box > p {
+  color: var(--text-light);
+  margin-bottom: 28px;
+}
+
+.submitted-data {
+  text-align: left;
+  background: var(--light-bg);
+  border-radius: 10px;
+  padding: 24px 28px;
+  margin: 24px 0;
+  border-left: 4px solid var(--primary);
+}
+
+.submitted-data p {
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+
+.submitted-data strong {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.back-btn {
+  display: inline-block;
+  background-color: var(--accent);
+  color: var(--dark);
+  padding: 12px 32px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.back-btn:hover {
+  background-color: #e08c4a;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+footer {
+  background-color: var(--dark);
+  color: #a8b2d8;
+  text-align: center;
+  padding: 28px 20px;
+  font-size: 0.88rem;
+  margin-top: 20px;
+}
+
+footer p {
+  margin-bottom: 6px;
+}
+
+footer a {
+  color: var(--secondary);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--accent);
+}
+
+/* ============================================
+   DIVIDER
+   ============================================ */
+.divider {
+  border: none;
+  border-top: 2px solid var(--border);
+  margin: 30px 0;
+}
+
+/* ============================================
+   PAGE-TITLE BANNER (individual surfer pages)
+   ============================================ */
+.page-banner {
+  background: linear-gradient(135deg, var(--dark) 0%, var(--primary) 100%);
+  color: var(--white);
+  padding: 55px 40px;
+  text-align: center;
+}
+
+.page-banner h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.8rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+}
+
+.page-banner p {
+  font-size: 1rem;
+  color: var(--secondary);
+  margin-top: 8px;
+  letter-spacing: 1px;
+}
+
+/* ============================================
+   RESPONSIVE — TABLET (max-width: 768px)
+   ============================================ */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .header-logo {
+    display: none;
+  }
+
+  .hero h2 {
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+  }
+
+  .hero {
+    padding: 75px 25px;
+  }
+
+  .bio-layout {
+    flex-direction: column;
+  }
+
+  .bio-img-wrap {
+    width: 100%;
+  }
+
+  .bio-img-wrap img {
+    height: 280px;
+  }
+
+  .page-banner h2 {
+    font-size: 2rem;
+  }
+
+  .content-section {
+    padding: 24px 20px;
+  }
+
+  .cards-grid {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  }
+}
+
+/* ============================================
+   RESPONSIVE — MOBILE (max-width: 480px)
+   ============================================ */
+@media (max-width: 480px) {
+  .header-brand h1 {
+    font-size: 1.4rem;
+  }
+
+  /* ── Mobile nav: vertical clickable boxes ── */
+  nav {
+    flex-direction: column;
+  }
+
+  nav a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 16px 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    font-size: 1rem;
+  }
+
+  nav a:last-child {
+    border-bottom: none;
+  }
+
+  /* Hero */
+  .hero {
+    padding: 55px 18px;
+  }
+
+  .hero h2 {
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+  }
+
+  .hero p {
+    font-size: 0.97rem;
+  }
+
+  /* Page banner */
+  .page-banner {
+    padding: 40px 18px;
+  }
+
+  .page-banner h2 {
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+  }
+
+  /* Cards */
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Content */
+  main {
+    padding: 20px 14px 40px;
+  }
+
+  .content-section {
+    padding: 20px 14px;
+  }
+
+  h2.section-title {
+    font-size: 1.55rem;
+  }
+
+  /* Stats badges */
+  .stat-badges {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Confirmation */
+  .confirmation-box {
+    padding: 30px 18px;
+  }
+}

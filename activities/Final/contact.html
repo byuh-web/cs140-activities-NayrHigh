@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | WSL Greatest Surfers</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-brand">
+      <h1>WSL Greatest Surfers</h1>
+      <p class="tagline">Celebrating the Legends of Professional Surfing</p>
+    </div>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="kelly.html">Kelly Slater</a>
+    <a href="andy.html">Andy Irons</a>
+    <a href="mick.html">Mick Fanning</a>
+    <a href="gabriel.html">Gabriel Medina</a>
+    <a href="contact.html" class="active">Contact</a>
+  </nav>
+
+  <!-- PAGE BANNER -->
+  <div class="page-banner">
+    <h2>Contact Us</h2>
+    <p>Share your thoughts, questions, or your favorite surfing moments</p>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <main>
+
+    <!-- INTRO SECTION -->
+    <section class="content-section">
+      <h2 class="section-title">Get in Touch</h2>
+      <p>
+        Are you a surfing fan? Do you have a favorite WSL legend? We'd love to hear from you!
+        Fill out the form below to share your thoughts, ask questions, or tell us what you think
+        about the greatest surfers in WSL history.
+      </p>
+      <p>
+        You can also explore more about the WSL at the official
+        <a href="https://www.worldsurfleague.com" class="ref-link" target="_blank">[World Surf League website]</a>
+        or follow the latest surfing news at
+        <a href="https://www.surfer.com" class="ref-link" target="_blank">[Surfer Magazine]</a>.
+      </p>
+    </section>
+
+    <!-- FORM SECTION -->
+    <section class="content-section">
+      <h2 class="section-title">Surfer Fan Form</h2>
+
+      <div class="form-container">
+        <form id="contactForm" novalidate>
+
+          <!-- Field 1: Full Name -->
+          <div class="form-group">
+            <label for="name">Full Name <span style="color:#e74c3c">*</span></label>
+            <input type="text" id="name" name="name" placeholder="e.g. Jane Smith" maxlength="80">
+            <p class="error-msg" id="nameError">Please enter your full name.</p>
+          </div>
+
+          <!-- Field 2: Email Address -->
+          <div class="form-group">
+            <label for="email">Email Address <span style="color:#e74c3c">*</span></label>
+            <input type="email" id="email" name="email" placeholder="e.g. jane@example.com">
+            <p class="error-msg" id="emailError">Please enter a valid email address.</p>
+          </div>
+
+          <!-- Field 3: Favorite Surfer -->
+          <div class="form-group">
+            <label for="surfer">Favorite Surfer on This List <span style="color:#e74c3c">*</span></label>
+            <select id="surfer" name="surfer">
+              <option value="">-- Select a Surfer --</option>
+              <option value="Kelly Slater">Kelly Slater</option>
+              <option value="Andy Irons">Andy Irons</option>
+              <option value="Mick Fanning">Mick Fanning</option>
+              <option value="Gabriel Medina">Gabriel Medina</option>
+              <option value="I love them all equally!">I love them all equally!</option>
+            </select>
+            <p class="error-msg" id="surferError">Please select your favorite surfer.</p>
+          </div>
+
+          <!-- Field 4: Surfing Experience -->
+          <div class="form-group">
+            <label for="experience">Your Surfing Experience</label>
+            <select id="experience" name="experience">
+              <option value="Never surfed but love watching">Never surfed, but love watching</option>
+              <option value="Complete beginner">Complete beginner (0–1 years)</option>
+              <option value="Intermediate surfer">Intermediate surfer (2–5 years)</option>
+              <option value="Experienced surfer">Experienced surfer (5+ years)</option>
+              <option value="Former competitive surfer">Former competitive surfer</option>
+            </select>
+          </div>
+
+          <!-- Field 5: Message -->
+          <div class="form-group">
+            <label for="message">Your Message or Comment <span style="color:#e74c3c">*</span></label>
+            <textarea id="message" name="message" placeholder="Tell us what you think about these surfers, share a favorite memory, or ask a question..."></textarea>
+            <p class="error-msg" id="messageError">Please enter a message before submitting.</p>
+          </div>
+
+          <!-- Field 6: Newsletter Subscribe -->
+          <div class="form-group checkbox-group">
+            <input type="checkbox" id="subscribe" name="subscribe">
+            <label for="subscribe">Subscribe to our newsletter for WSL updates and surfing news</label>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="btn-submit">Submit</button>
+
+        </form>
+      </div>
+    </section>
+
+    <!-- ADDITIONAL INFO -->
+    <section class="content-section">
+      <h2 class="section-title">Want to Learn More?</h2>
+      <p>
+        Here are some great resources for following professional surfing:
+      </p>
+      <ul>
+        <li>
+          <a href="https://www.worldsurfleague.com" class="ref-link" target="_blank">WorldSurfLeague.com</a>
+          — Official WSL website with live scores, event schedules, and athlete profiles.
+        </li>
+        <li>
+          <a href="https://www.surfer.com" class="ref-link" target="_blank">Surfer Magazine</a>
+          — The world's oldest and most respected surf magazine.
+        </li>
+        <li>
+          <a href="https://www.youtube.com/@wsl" class="ref-link" target="_blank">WSL on YouTube</a>
+          — Full event replays, highlight reels, and behind-the-scenes content.
+        </li>
+        <li>
+          <a href="https://en.wikipedia.org/wiki/World_Surf_League" class="ref-link" target="_blank">Wikipedia — WSL</a>
+          — Comprehensive history and statistics for the WSL Championship Tour.
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 WSL Greatest Surfers &mdash; Educational Website</p>
+    <p>
+      All information sourced from
+      <a href="https://www.worldsurfleague.com" target="_blank">worldsurfleague.com</a> and
+      <a href="https://en.wikipedia.org" target="_blank">Wikipedia</a>.
+    </p>
+  </footer>
+
+  <!-- JAVASCRIPT: Form Validation & Submission -->
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      // ── Gather values ──
+      var name       = document.getElementById('name').value.trim();
+      var email      = document.getElementById('email').value.trim();
+      var surfer     = document.getElementById('surfer').value;
+      var experience = document.getElementById('experience').value;
+      var message    = document.getElementById('message').value.trim();
+      var subscribe  = document.getElementById('subscribe').checked;
+
+      var isValid = true;
+
+      // ── Validate: Name ──
+      if (name === '') {
+        document.getElementById('nameError').style.display = 'block';
+        isValid = false;
+      } else {
+        document.getElementById('nameError').style.display = 'none';
+      }
+
+      // ── Validate: Email ──
+      var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (email === '' || !emailPattern.test(email)) {
+        document.getElementById('emailError').style.display = 'block';
+        isValid = false;
+      } else {
+        document.getElementById('emailError').style.display = 'none';
+      }
+
+      // ── Validate: Surfer selection ──
+      if (surfer === '') {
+        document.getElementById('surferError').style.display = 'block';
+        isValid = false;
+      } else {
+        document.getElementById('surferError').style.display = 'none';
+      }
+
+      // ── Validate: Message ──
+      if (message === '') {
+        document.getElementById('messageError').style.display = 'block';
+        isValid = false;
+      } else {
+        document.getElementById('messageError').style.display = 'none';
+      }
+
+      // ── If valid, store data and redirect ──
+      if (isValid) {
+        var formData = {
+          name:       name,
+          email:      email,
+          surfer:     surfer,
+          experience: experience,
+          message:    message,
+          subscribe:  subscribe ? 'Yes — sign me up!' : 'No thanks'
+        };
+
+        // Store in localStorage so confirmation page can read it
+        localStorage.setItem('wslFormData', JSON.stringify(formData));
+
+        // Redirect to confirmation page (server-side would handle this in production)
+        window.location.href = 'confirmation.html';
+      }
+    });
+  </script>
+
+</body>
+</html>
